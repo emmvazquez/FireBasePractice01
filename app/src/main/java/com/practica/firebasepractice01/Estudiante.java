@@ -2,37 +2,37 @@ package com.practica.firebasepractice01;
 
 public class Estudiante {
 
-    public String IdEstudiante;
-    public String Nombre;
-    public String Apellidos;
-    public String Sexo;
-    public String Carrera;
+    public String idEstudiante;
+    public String nombre;
+    public String apellidos;
+    public String sexo;
+    public String carrera;
 
     public Estudiante(String idEstudiante, String nombre, String apellidos, String sexo, String carrera) {
-        IdEstudiante = idEstudiante;
-        Nombre = nombre;
-        Apellidos = apellidos;
-        Sexo = sexo;
-        Carrera = carrera;
+        this.idEstudiante = idEstudiante;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.sexo = sexo;
+        this.carrera = carrera;
     }
 
     public String getIdEstudiante() {
-        return IdEstudiante;
+        return idEstudiante;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public String getApellidos() {
-        return Apellidos;
+        return apellidos;
     }
 
     public String getSexo() {
-        return Sexo;
+        return sexo;
     }
 
     public String getCarrera() {
-        return Carrera;
+        return carrera;
     }
 }

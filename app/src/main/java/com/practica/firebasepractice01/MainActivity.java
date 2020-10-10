@@ -64,9 +64,9 @@ private DatabaseReference dbAlumno;
        String Carrera = spinCarrera.getSelectedItem().toString();
 
        if(!TextUtils.isEmpty(Nombre)){
-            String id =  dbAlumno.push().getKey();
-            Estudiante estudiante = new Estudiante(id, Nombre, Apellidos, Sexo, Carrera);
-            dbAlumno.child("Estudiante").child(id).setValue(estudiante);
+            String IdEstudiante =  dbAlumno.push().getKey();
+            Estudiante estudiante = new Estudiante(IdEstudiante, Nombre, Apellidos, Sexo, Carrera);
+            dbAlumno.child("Estudiante").child(IdEstudiante).setValue(estudiante);
 
            Toast.makeText(this, "Estudiante registrado", Toast.LENGTH_LONG).show();
        }
